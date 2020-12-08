@@ -19,10 +19,12 @@
 
 
     function timing (cancCalc) {
+      date = new Date();
        let hours = date.getHours();
     let mins = date.getMinutes();
     if (hours == 0 && mins == 0) putDate(); //verify
     if (mins.toString().length < 2) mins = '0' + mins;
+    console.log(clock)
     clock.innerHTML = hours + ':' + mins;
 
     if (chosen && cancCalc) {
