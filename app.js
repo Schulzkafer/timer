@@ -6,6 +6,8 @@
     const jsonParser = bodyParser.json()
     const urlencodedParser = bodyParser.urlencoded({extended: false});
 
+    const port = process.env.PORT || 3000;
+
     app.use(express.static(__dirname + "/public"));
 
     app.get("/", function(request, response) {
@@ -39,5 +41,5 @@
 
      res.send()
         });
-
-    app.listen(3000, ()=> {console.log('server 3000')});
+        
+    app.listen(port, ()=> {console.log('server--ok')});
