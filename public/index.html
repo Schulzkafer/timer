@@ -1,0 +1,37 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Мое время</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+        </head>
+        <body>
+    <div id="container">
+
+    <div>    
+    <div id="data-block">
+        <span id="day-of-the-week"></span>
+        <span id="day-of-the-month"></span>
+    </div>    
+
+    <div id="clock"></div>
+    </div>
+
+
+    <div id="exam-goal" class="study-time">Time for exam:<span></span><button id="oneB" class="timeButton" onclick="choose('exam-goal')">choose</button></div>
+    <div id="programming-goal" class="study-time">Time for programming:<span></span><button id="twoB" class="timeButton" onclick="choose('programming-goal')">choose</button></div>
+    <div id="exam-debt" class="study-time">Exam time debt:<span></span></div>
+    <div id="programming-debt" class="study-time">Programming time debt:<span></span></div>
+
+    <button id="save-button" onclick="saveF()">SAVE</button>
+    <button id="stop-button" onclick="stopF()">Stop counting</button>
+    <button id="begin-button" onclick="newDayF()">Begin new day</button>
+
+     <div id="notice-window" hidden onclick="this.hidden=true">FFDdvfdbff</div>
+
+    </div>
+
+    <script src="/assets/script.js"></script>
+
+        </body>
+    </html>
